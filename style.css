@@ -5,6 +5,7 @@ html, body {
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
     background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
 }
 
@@ -14,8 +15,8 @@ body {
     padding-top: 3em;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: -5.5em;
-    /* margin: auto; */
+    margin-bottom: -7em;
+    filter: drop-shadow(0 8mm hsl(260, 9%, 94%));
 }
 
 /* hero image on desktop */
@@ -36,7 +37,11 @@ main {
 h1 {
     text-align: center;
     font-weight: 700;
+    padding-top: 2em;
 }
+
+/* sections containing questions and answers */
+.question {}
 
 /* answers inside drop-down */
 .answer {}
