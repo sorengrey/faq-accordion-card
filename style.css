@@ -12,6 +12,7 @@ body {
 #mobile-img {
     display: flex;
     margin: auto;
+    padding-top: 3em;
 }
 
 /* hero image on desktop */
@@ -23,7 +24,9 @@ body {
 main {
     margin: auto;
     background-color: #FFFFFF;
-    padding-top: 3em;
+    padding: 2em;
+    width: 70%;
+    border-radius: 20px;
 }
 
 .answer {}
