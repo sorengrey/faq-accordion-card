@@ -7,6 +7,18 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+/* hero image on mobile */
+#mobile-img {
+    display: flex;
+    margin: auto;
+}
+
+/* hero image on desktop */
+#desktop-img {
+    display: none;
+    margin: auto;
+}
+
 .attribution {
     display: none;
 }
