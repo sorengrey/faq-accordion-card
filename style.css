@@ -31,6 +31,7 @@ main {
     padding: 5em 2em 3em 2em;
     width: 70%;
     border-radius: 22px;
+    /* filter:drop-shadow(0 5mm); */
 }
 
 /* faq */
@@ -43,19 +44,28 @@ h1 {
 
 /* dividers between the dropdowns */
 hr {
-    background-color: hsl(240, 5%, 91%);
+    height: 1px;
+    border: 1px solid hsl(240, 5%, 91%);
 }
 
+/* sections containing questions, dropdown buttons, and answers */
+.dropdown {
 
-/* sections containing questions and answers */
-.question {}
+}
+
+/* the dropdown  questions */
+.question {
+    padding: 1em;
+}
 
 /* answers inside drop-down */
-.answer {}
+.answer {
+    display: none;
+}
 
-/* the drop-down arrows */
+/* the dropdown arrows */
 .drop-btn {
-
+    cursor: pointer;
 }
 
 /* .drop-btn:hover, .drop-btn:focus {

@@ -1,6 +1,6 @@
 console.log("test");
 
-function myFunction() {
+function dropDownArrow() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
