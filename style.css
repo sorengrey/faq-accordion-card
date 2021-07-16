@@ -52,9 +52,10 @@ hr {
 
 }
 
-/* the dropdown  questions */
+/* the dropdown questions */
 .question {
     padding: 1em;
+    font-size: 12px;
 }
 
 /* answers inside drop-down */
@@ -65,11 +66,13 @@ hr {
 /* the dropdown arrows */
 .drop-btn {
     cursor: pointer;
+    float: right;
 }
 
-/* .drop-btn:hover, .drop-btn:focus {
-    background-color: #2980B9;
-  } */
+/* the dropdown arrows - upside down */
+.rotated {
+    transform:rotate();
+}
 
 .attribution {
     display: none;
