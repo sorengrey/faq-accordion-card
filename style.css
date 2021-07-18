@@ -56,11 +56,23 @@ hr {
 .question {
     padding: 1em;
     font-size: 12px;
+    text-align: left;
+    display: inline;
+}
+
+/* question text after being clicked*/
+.bold {
+    font-weight: bold;
 }
 
 /* answers inside drop-down */
 .answer {
     display: none;
+    padding: 1em;
+}
+
+.answer-show {
+    display: inline;
 }
 
 /* the dropdown arrows */
@@ -71,7 +83,9 @@ hr {
 
 /* the dropdown arrows - upside down */
 .rotated {
-    transform:rotate();
+    transform:rotate(180deg);
+    cursor: pointer;
+    float: right;
 }
 
 .attribution {
