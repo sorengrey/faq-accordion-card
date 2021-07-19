@@ -25,6 +25,11 @@ body {
     margin: auto;
 }
 
+/* box image on desktop */
+#box {
+    display: none;
+}
+
 main {
     margin: auto;
     background-color: #FFFFFF;
@@ -70,4 +75,31 @@ hr {
 
 .attribution {
     display: none;
+}
+
+
+/* desktop view */
+@media screen and (min-width: 376px){
+    main {
+        margin-top: 5em;
+        width: 75%;
+    }
+    #mobile-img {
+        display: none;
+    }
+    #desktop-img {
+        display: inline-flex;
+        margin-left: -8em;
+    }
+    #box{
+        display: block;
+    }
+    .dropdown {
+        width: 50%;
+        float: right;
+    }
+    hr {
+        width: 50%;
+        float: right;
+    }
 }
