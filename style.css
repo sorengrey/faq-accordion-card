@@ -62,7 +62,6 @@ hr {
 /* answers inside drop-down */
 .answer {
     display: none;
-    margin-top: 1em;
     padding: 1em;
 }
 
@@ -72,7 +71,6 @@ hr {
     float: right;
     transform-origin: top left;
 }
-
 
 .attribution {
     display: none;
