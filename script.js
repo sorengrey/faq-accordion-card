@@ -19,7 +19,6 @@ if(answer.style.display === "none") {
 }
 }
 
-// hides answers if you click the arrow again
 for (let question of dropDown) {
     let answer = question.nextElementSibling;
     answer.style.display = "none";
