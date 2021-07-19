@@ -1,31 +1,26 @@
-// hides and unhides answers, rotates arrows when clicked
-function clickArrow() {
-    var dropbtn = document.querySelector(".drop-btn");
-    dropbtn.setAttribute("class", "rotated");
+// selects the dropdown section and questions
+let dropDown = document.querySelectorAll(".dropdown .question");
 
-    var question = document.querySelector(".question");
-    question.setAttribute("class", "bold");
+// takes in the click event, shows answers, bolds questions, rotates arrows when clicked, does the opposite when clicked again
+let clickArrow = (e) => {
+var dropbtn = e.target;
+var question = e.currentTarget.parentNode;
+var answer = e.currentTarget.nextElementSibling;
 
-    var answer = document.querySelector(".answer");
-    answer.setAttribute("class", ".answer-show");
-    
-    // if the drop button's class is already .rotated, remove the class and hide the answer - this doesn't work yet?
-    if(dropbtn.classList.contains("rotated")){
-       dropbtn.removeClass("rotated");
-    }
+if(answer.style.display === "none") {
+    answer.style.display = "block";
+    question.style.fontWeight = "700";
+    dropbtn.style.transform = "rotate(180deg)";
+} else {
+    answer.style.display = "none";
+    question.style.fontWeight = "400";
+    dropbtn.style.transform = "rotate(0deg)";
+}
 }
 
-
-// close the dropdown if the user clicks outside of it
-// window.onclick = function (event) {
-//   if (!event.target.matches(".drop-btn")) {
-//     var dropdowns = document.getElementsByClassName("answer");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains("show")) {
-//         openDropdown.classList.remove("show");
-//       }
-//     }
-//   }
-// };
+// hides answers if you click the arrow again
+for (let question of dropDown) {
+    let answer = question.nextElementSibling;
+    answer.style.display = "none";
+    question.addEventListener("click", clickArrow);
+  }

@@ -49,7 +49,6 @@ hr {
 
 /* sections containing questions, dropdown buttons, and answers */
 .dropdown {
-
 }
 
 /* the dropdown questions */
@@ -60,33 +59,20 @@ hr {
     display: inline;
 }
 
-/* question text after being clicked*/
-.bold {
-    font-weight: bold;
-}
-
 /* answers inside drop-down */
 .answer {
     display: none;
+    margin-top: 1em;
     padding: 1em;
-}
-
-.answer-show {
-    display: inline;
 }
 
 /* the dropdown arrows */
 .drop-btn {
     cursor: pointer;
     float: right;
+    transform-origin: top left;
 }
 
-/* the dropdown arrows - upside down */
-.rotated {
-    transform:rotate(180deg);
-    cursor: pointer;
-    float: right;
-}
 
 .attribution {
     display: none;
