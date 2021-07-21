@@ -59,6 +59,8 @@ hr {
     text-align: left;
     display: inline;
     color: 1E1F36;
+    font-size: 14px;
+    line-height: 14.08px;
 }
 .question:hover {
     color: #F47B56;
@@ -71,7 +73,6 @@ hr {
     margin: 1em 0 1.5em 0;
     line-height: 18px;
     color: #787887;
-    style: normal;
 }
 
 /* the dropdown arrows */
@@ -85,7 +86,7 @@ hr {
 }
 
 
-/* desktop view */
+/* desktop view - 1440px */
 @media screen and (min-width: 476px){
     body {
         padding: 0;
@@ -102,27 +103,30 @@ hr {
         flex-direction: row;
         background-image: url(./images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
-        background-position: 4000% 70%;
+        background-position: -4300% 69%;
+        overflow: hidden;
     }
     #mobile-img {
         display: none;
     }
     #desktop-img {
         display: block;
-        margin-left: -8em;
+        margin-left: -5.5em;
+        margin-bottom: 2em;
         padding: 0;
-        overflow: hidden;
+        z-index: 0;
     }
     #box{
         display: flex;
         position: absolute;
-        top: 33%;
-        left: 6em;
+        top: 44%;
+        left: 8.5em;
+        z-index: 1;
     }
     #text {
         width: 50%;
         float: right;
-        margin: 0 2em 0 4em;
+        margin: 0 2em 0 3em;
     }
     h1 {
         text-align: left;
