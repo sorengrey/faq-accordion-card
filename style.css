@@ -96,7 +96,7 @@ hr {
     }
     main {
         margin: 6em auto auto auto;
-        padding: 0 0 2em 0;
+        padding: 0 0 3em 0;
         font-size: 16px;
         width: 68%;
         display: flex;
@@ -105,28 +105,28 @@ hr {
         background-repeat: no-repeat;
         background-position: -4300% 69%;
         overflow: hidden;
+        z-index: -1;
     }
     #mobile-img {
         display: none;
     }
     #desktop-img {
         display: block;
-        margin-left: -5.5em;
-        margin-bottom: 2em;
+        margin-top: 6em;
+        margin-left: -5em;
         padding: 0;
+        position: absolute;
         z-index: 0;
     }
     #box{
         display: flex;
         position: absolute;
-        top: 44%;
+        top: 42%;
         left: 8.5em;
-        z-index: 1;
     }
     #text {
-        width: 50%;
-        float: right;
-        margin: 0 2em 0 3em;
+        width: 45%;
+        margin-left: 26.5em;
     }
     h1 {
         text-align: left;
