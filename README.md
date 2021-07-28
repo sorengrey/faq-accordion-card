@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion card
 
-[A coding challenge from Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR/hub/meet-landing-page-PRuqKlnzo)
+[A coding challenge from Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam)
 
 
 ## Table of contents
